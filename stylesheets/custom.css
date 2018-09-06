@@ -1,0 +1,40 @@
+/* line 1, ../sass/_reset.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, ../sass/custom.scss */
+.work-area button, .work-area input {
+  margin-top: 40vh;
+  height: 100px;
+  width: 200px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+/* line 20, ../sass/custom.scss */
+.work-area button:hover, .work-area input:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  font-family: 'Arial';
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* line 32, ../sass/custom.scss */
+.work-area {
+  width: 100vw;
+  height: 100vh;
+  background-color: darkslategray;
+  text-align: center;
+}
+/* line 8, ../sass/custom.scss */
+.work-area button:hover {
+  background-color: white;
+}
+/* line 8, ../sass/custom.scss */
+.work-area input:hover {
+  background-color: papayawhip;
+}

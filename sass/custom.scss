@@ -1,0 +1,45 @@
+@import 'reset';
+
+$btn-height: 100px;
+$btn-width: $btn-height * 2;
+$btn-br: $btn-height / 5;
+
+@mixin bg-btn-color($color){
+    &:hover{
+        background-color: $color;
+    }
+}
+
+%btn-default{
+    margin-top: 40vh;
+    height: $btn-height;
+    width: $btn-width;
+    border-radius: $btn-br;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    &:hover{
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+        font: {
+            family: 'Arial';
+            weight: bold;
+            style: italic; 
+        }
+    }
+}
+
+
+.work-area{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslategray;
+    text-align: center;
+    button{
+        @extend %btn-default;   
+        @include bg-btn-color(white)
+        }
+    input{
+        @extend %btn-default;
+        @include bg-btn-color(papayawhip)
+    }
+}
